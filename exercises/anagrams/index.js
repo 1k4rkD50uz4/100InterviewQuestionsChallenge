@@ -9,29 +9,31 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-    let i=0,
-        words = stringB.match(/\w+\b/g),
+    let words = stringB.match(/\w+\b/g),
         arrNonChars = stringA.match(/\W+/)[0].split(''),
-        n = 0;
-    for (let nc of arrNonChars) {
-        for (let word of words) {
-            let arr = [];
-            for (let c of word) {
-                if (c != nc) {
-                    let i = stringA.indexOf(c);
-                    if (!arr.includes(i)) {
-                        arr.push(i);
-                    }
-                    else {
-                        i = stringA.substring(++i).indexOf(c);
-
-                    }
-                }
-
+        arr = [];
+    for (let word of words) {
+        for (let c of word) {            
+            if (!arrNonChars.includes(c)) {
+                let i = stringA.indexOf(c.toUpperCase());
+                i = !i ? stringA.indexOf(c) : i;                
+                insertArr.call({i:i,c:c});
             }
         }
-    }    
-    return true;
+    }
+    return arr.length == stringA.length - arrNonChars.length - 1;
+    function insertArr() {
+        let i = this.i, c = this.c;
+        if (!arr.includes(i)) {
+            arr.push(i);
+        }
+        else {
+            let s = stringA.substring(++i);
+            i = s.indexOf(c.toUpperCase());
+            i = !i ? stringA.indexOf(c) : i;  
+            insertArr.call({ i: i, c: c });
+        }
+    }
 }
-anagrams('RAIL! SAFETY!', 'fairy tales');
+anagrams('hello', 'llohe');
 module.exports = anagrams;
