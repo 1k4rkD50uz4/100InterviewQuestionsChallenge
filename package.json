@@ -1,0 +1,11 @@
+{
+  "name": "100InterviewQuestionsChallenge",
+  "version": "0.0.0",
+  "description": "100InterviewQuestionsChallenge",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
