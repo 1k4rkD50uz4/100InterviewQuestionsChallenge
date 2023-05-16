@@ -1,5 +1,5 @@
 // --- Directions
-// Check to see if two provided strings are anagrams of eachother.
+// Check to see if two provided strings are anagrams of each other.
 // One string is an anagram of another if it uses the same characters
 // in the same quantity. Only consider characters, not spaces
 // or punctuation.  Consider capital letters to be the same as lower case
@@ -8,32 +8,34 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+// res = anagrams('One One', 'Two two two');   //  --> False
 function anagrams(stringA, stringB) {
-    let words = stringB.match(/\w+\b/g),
-        arrNonChars = stringA.match(/\W+/)[0].split(''),
-        arr = [];
-    for (let word of words) {
-        for (let c of word) {            
-            if (!arrNonChars.includes(c)) {
-                let i = stringA.indexOf(c.toUpperCase());
-                i = !i ? stringA.indexOf(c) : i;                
-                insertArr.call({i:i,c:c});
+    let i = 0, c, n = 0, sa = stringA, sb = stringB, arr=[], j = 0;
+    for (let a of stringA) {
+        i = sa.indexOf(a);
+        c = a;
+        if (i != sa.lastIndexOf(c)) {
+            ssa = ssa.substring(++i);
+            i = ssa.indexOf(a);
+                
+        }
+        if (a == c || a.toLowerCase() == c) {
+            n++;
+        }
+        for (let b of sb) {
+            if (a == b || a.toLowerCase() == b) {
+                n++;
+            }
+            if (j == sb.length - 1) {
+
             }
         }
-    }
-    return arr.length == stringA.length - arrNonChars.length - 1;
-    function insertArr() {
-        let i = this.i, c = this.c;
-        if (!arr.includes(i)) {
-            arr.push(i);
-        }
-        else {
-            let s = stringA.substring(++i);
-            i = s.indexOf(c.toUpperCase());
-            i = !i ? stringA.indexOf(c) : i;  
-            insertArr.call({ i: i, c: c });
-        }
-    }
+    }    
 }
-anagrams('hello', 'llohe');
+let res = anagrams('rail safety', 'fairy tales');   //  --> True
+res = anagrams('RAIL! SAFETY!', 'fairy tales'); //  --> True
+res = anagrams('hello', 'llohe');   //  --> True
+res = anagrams('Whoa! Hi!', 'Hi! Whoa!');   //  --> True
+res = anagrams('One One', 'Two two two');   //  --> False
+res = anagrams('One one', 'One one c');   //  --> False
 module.exports = anagrams;
