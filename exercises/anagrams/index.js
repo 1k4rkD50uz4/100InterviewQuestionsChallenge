@@ -9,7 +9,8 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-    let words = stringB.match(/\w+\b/g),
+    let words = stringA.match(/\w+\b/g),
+        compWords = stringB.match(/\w+\b/g),
         arrNonChars = stringA.match(/\W+/)[0].split(''),
         arr = [];
     for (let word of words) {
@@ -35,5 +36,5 @@ function anagrams(stringA, stringB) {
         }
     }
 }
-anagrams('hello', 'llohe');
+anagrams('RAIL! SAFETY!', 'fairy tales');
 module.exports = anagrams;
