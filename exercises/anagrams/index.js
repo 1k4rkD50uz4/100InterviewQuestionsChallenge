@@ -45,12 +45,4 @@ function anagrams(stringA, stringB) {
         return n;
     }
 }
-//let res=anagrams('rail safety', 'fairy tales') // --> True
-//res =anagrams('RAIL! SAFETY!', 'fairy tales') //--> True
-//res = anagrams('Hi there', 'Bye there') //--> False
-//res = anagrams('hello', 'llohe') //--> True
-//res = anagrams('Whoa! Hi!', 'Hi! Whoa!') //--> True
-//res = anagrams('One One', 'Two two two') //--> False
-//res = anagrams('One one', 'One one c') //--> False
-//res = anagrams('A tree, a life, a bench', 'A tree, a fence, a yard') //--> False
 module.exports = anagrams;
