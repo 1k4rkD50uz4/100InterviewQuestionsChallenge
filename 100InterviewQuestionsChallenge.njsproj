@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{bfeda513-82e5-49a4-ad74-1756140125b4}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>exercises\anagrams\index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="package.json" />
+    <Content Include="completed_exercises\package.json" />
+    <Content Include="exercises\package.json" />
+    <Content Include="completed_exercises\anagrams\index.js" />
+    <Content Include="completed_exercises\anagrams\test.js" />
+    <Content Include="completed_exercises\bst\index.js" />
+    <Content Include="completed_exercises\bst\test.js" />
+    <Content Include="completed_exercises\capitalize\index.js" />
+    <Content Include="completed_exercises\capitalize\test.js" />
+    <Content Include="completed_exercises\chunk\index.js" />
+    <Content Include="completed_exercises\chunk\test.js" />
+    <Content Include="completed_exercises\circular\index.js" />
+    <Content Include="completed_exercises\circular\linkedlist.js" />
+    <Content Include="completed_exercises\circular\test.js" />
+    <Content Include="completed_exercises\events\example.html" />
+    <Content Include="completed_exercises\events\index.js" />
+    <Content Include="completed_exercises\events\test.js" />
+    <Content Include="completed_exercises\fib\index.js" />
+    <Content Include="completed_exercises\fib\test.js" />
+    <Content Include="completed_exercises\fizzbuzz\index.js" />
+    <Content Include="completed_exercises\fizzbuzz\test.js" />
+    <Content Include="completed_exercises\fromlast\index.js" />
+    <Content Include="completed_exercises\fromlast\linkedlist.js" />
+    <Content Include="completed_exercises\fromlast\test.js" />
+    <Content Include="completed_exercises\levelwidth\index.js" />
+    <Content Include="completed_exercises\levelwidth\node.js" />
+    <Content Include="completed_exercises\levelwidth\test.js" />
+    <Content Include="completed_exercises\linkedlist\directions.html" />
+    <Content Include="completed_exercises\linkedlist\index.js" />
+    <Content Include="completed_exercises\linkedlist\test.js" />
+    <Content Include="completed_exercises\matrix\index.js" />
+    <Content Include="completed_exercises\matrix\test.js" />
+    <Content Include="completed_exercises\maxchar\index.js" />
+    <Content Include="completed_exercises\maxchar\test.js" />
+    <Content Include="completed_exercises\midpoint\index.js" />
+    <Content Include="completed_exercises\midpoint\linkedlist.js" />
+    <Content Include="completed_exercises\midpoint\test.js" />
+    <Content Include="completed_exercises\palindrome\index.js" />
+    <Content Include="completed_exercises\palindrome\test.js" />
+    <Content Include="completed_exercises\pyramid\index.js" />
+    <Content Include="completed_exercises\pyramid\test.js" />
+    <Content Include="completed_exercises\qfroms\index.js" />
+    <Content Include="completed_exercises\qfroms\stack.js" />
+    <Content Include="completed_exercises\qfroms\test.js" />
+    <Content Include="completed_exercises\queue\index.js" />
+    <Content Include="completed_exercises\queue\test.js" />
+    <Content Include="completed_exercises\reverseint\index.js" />
+    <Content Include="completed_exercises\reverseint\test.js" />
+    <Content Include="completed_exercises\reversestring\index.js" />
+    <Content Include="completed_exercises\reversestring\test.js" />
+    <Content Include="completed_exercises\sorting\index.js" />
+    <Content Include="completed_exercises\sorting\test.js" />
+    <Content Include="completed_exercises\stack\index.js" />
+    <Content Include="completed_exercises\stack\test.js" />
+    <Content Include="completed_exercises\steps\index.js" />
+    <Content Include="completed_exercises\steps\test.js" />
+    <Content Include="completed_exercises\tree\index.js" />
+    <Content Include="completed_exercises\tree\test.js" />
+    <Content Include="completed_exercises\validate\index.js" />
+    <Content Include="completed_exercises\validate\node.js" />
+    <Content Include="completed_exercises\validate\test.js" />
+    <Content Include="completed_exercises\vowels\index.js" />
+    <Content Include="completed_exercises\vowels\test.js" />
+    <Content Include="completed_exercises\weave\index.js" />
+    <Content Include="completed_exercises\weave\queue.js" />
+    <Content Include="completed_exercises\weave\test.js" />
+    <Content Include="diagrams\01\diagrams.xml" />
+    <Content Include="diagrams\02\diagrams.xml" />
+    <Content Include="diagrams\03\diagrams.xml" />
+    <Content Include="diagrams\04\diagrams.xml" />
+    <Content Include="diagrams\05\diagrams.xml" />
+    <Content Include="diagrams\06\diagrams.xml" />
+    <Content Include="diagrams\07\diagrams.xml" />
+    <Content Include="diagrams\08\diagrams.xml" />
+    <Content Include="diagrams\09\diagrams.xml" />
+    <Content Include="diagrams\10\diagrams.xml" />
+    <Content Include="exercises\anagrams\index.js" />
+    <Content Include="exercises\anagrams\test.js" />
+    <Content Include="exercises\bst\index.js" />
+    <Content Include="exercises\bst\test.js" />
+    <Content Include="exercises\capitalize\index.js" />
+    <Content Include="exercises\capitalize\test.js" />
+    <Content Include="exercises\chunk\index.js" />
+    <Content Include="exercises\chunk\test.js" />
+    <Content Include="exercises\circular\index.js" />
+    <Content Include="exercises\circular\linkedlist.js" />
+    <Content Include="exercises\circular\test.js" />
+    <Content Include="exercises\events\example.html" />
+    <Content Include="exercises\events\index.js" />
+    <Content Include="exercises\events\test.js" />
+    <Content Include="exercises\fib\index.js" />
+    <Content Include="exercises\fib\test.js" />
+    <Content Include="exercises\fizzbuzz\index.js" />
+    <Content Include="exercises\fizzbuzz\test.js" />
+    <Content Include="exercises\fromlast\index.js" />
+    <Content Include="exercises\fromlast\linkedlist.js" />
+    <Content Include="exercises\fromlast\test.js" />
+    <Content Include="exercises\levelwidth\index.js" />
+    <Content Include="exercises\levelwidth\node.js" />
+    <Content Include="exercises\levelwidth\test.js" />
+    <Content Include="exercises\linkedlist\directions.html" />
+    <Content Include="exercises\linkedlist\index.js" />
+    <Content Include="exercises\linkedlist\test.js" />
+    <Content Include="exercises\matrix\index.js" />
+    <Content Include="exercises\matrix\test.js" />
+    <Content Include="exercises\maxchar\index.js" />
+    <Content Include="exercises\maxchar\test.js" />
+    <Content Include="exercises\midpoint\index.js" />
+    <Content Include="exercises\midpoint\linkedlist.js" />
+    <Content Include="exercises\midpoint\test.js" />
+    <Content Include="exercises\palindrome\index.js" />
+    <Content Include="exercises\palindrome\test.js" />
+    <Content Include="exercises\pyramid\index.js" />
+    <Content Include="exercises\pyramid\test.js" />
+    <Content Include="exercises\qfroms\index.js" />
+    <Content Include="exercises\qfroms\stack.js" />
+    <Content Include="exercises\qfroms\test.js" />
+    <Content Include="exercises\queue\index.js" />
+    <Content Include="exercises\queue\test.js" />
+    <Content Include="exercises\reverseint\index.js" />
+    <Content Include="exercises\reverseint\test.js" />
+    <Content Include="exercises\reversestring\index.js" />
+    <Content Include="exercises\reversestring\test.js" />
+    <Content Include="exercises\sorting\index.js" />
+    <Content Include="exercises\sorting\test.js" />
+    <Content Include="exercises\stack\index.js" />
+    <Content Include="exercises\stack\test.js" />
+    <Content Include="exercises\steps\index.js" />
+    <Content Include="exercises\steps\test.js" />
+    <Content Include="exercises\tree\index.js" />
+    <Content Include="exercises\tree\test.js" />
+    <Content Include="exercises\validate\index.js" />
+    <Content Include="exercises\validate\node.js" />
+    <Content Include="exercises\validate\test.js" />
+    <Content Include="exercises\vowels\index.js" />
+    <Content Include="exercises\vowels\test.js" />
+    <Content Include="exercises\weave\index.js" />
+    <Content Include="exercises\weave\queue.js" />
+    <Content Include="exercises\weave\test.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="completed_exercises" />
+    <Folder Include="completed_exercises\anagrams" />
+    <Folder Include="completed_exercises\bst" />
+    <Folder Include="completed_exercises\capitalize" />
+    <Folder Include="completed_exercises\chunk" />
+    <Folder Include="completed_exercises\circular" />
+    <Folder Include="completed_exercises\events" />
+    <Folder Include="completed_exercises\fib" />
+    <Folder Include="completed_exercises\fizzbuzz" />
+    <Folder Include="completed_exercises\fromlast" />
+    <Folder Include="completed_exercises\levelwidth" />
+    <Folder Include="completed_exercises\linkedlist" />
+    <Folder Include="completed_exercises\matrix" />
+    <Folder Include="completed_exercises\maxchar" />
+    <Folder Include="completed_exercises\midpoint" />
+    <Folder Include="completed_exercises\palindrome" />
+    <Folder Include="completed_exercises\pyramid" />
+    <Folder Include="completed_exercises\qfroms" />
+    <Folder Include="completed_exercises\queue" />
+    <Folder Include="completed_exercises\reverseint" />
+    <Folder Include="completed_exercises\reversestring" />
+    <Folder Include="completed_exercises\sorting" />
+    <Folder Include="completed_exercises\stack" />
+    <Folder Include="completed_exercises\steps" />
+    <Folder Include="completed_exercises\tree" />
+    <Folder Include="completed_exercises\validate" />
+    <Folder Include="completed_exercises\vowels" />
+    <Folder Include="completed_exercises\weave" />
+    <Folder Include="diagrams" />
+    <Folder Include="diagrams\01" />
+    <Folder Include="diagrams\02" />
+    <Folder Include="diagrams\03" />
+    <Folder Include="diagrams\04" />
+    <Folder Include="diagrams\05" />
+    <Folder Include="diagrams\06" />
+    <Folder Include="diagrams\07" />
+    <Folder Include="diagrams\08" />
+    <Folder Include="diagrams\09" />
+    <Folder Include="diagrams\10" />
+    <Folder Include="exercises" />
+    <Folder Include="exercises\anagrams" />
+    <Folder Include="exercises\bst" />
+    <Folder Include="exercises\capitalize" />
+    <Folder Include="exercises\chunk" />
+    <Folder Include="exercises\circular" />
+    <Folder Include="exercises\events" />
+    <Folder Include="exercises\fib" />
+    <Folder Include="exercises\fizzbuzz" />
+    <Folder Include="exercises\fromlast" />
+    <Folder Include="exercises\levelwidth" />
+    <Folder Include="exercises\linkedlist" />
+    <Folder Include="exercises\matrix" />
+    <Folder Include="exercises\maxchar" />
+    <Folder Include="exercises\midpoint" />
+    <Folder Include="exercises\palindrome" />
+    <Folder Include="exercises\pyramid" />
+    <Folder Include="exercises\qfroms" />
+    <Folder Include="exercises\queue" />
+    <Folder Include="exercises\reverseint" />
+    <Folder Include="exercises\reversestring" />
+    <Folder Include="exercises\sorting" />
+    <Folder Include="exercises\stack" />
+    <Folder Include="exercises\steps" />
+    <Folder Include="exercises\tree" />
+    <Folder Include="exercises\validate" />
+    <Folder Include="exercises\vowels" />
+    <Folder Include="exercises\weave" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

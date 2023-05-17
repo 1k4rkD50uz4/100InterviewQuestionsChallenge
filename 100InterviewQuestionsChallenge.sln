@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33529.398
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "100InterviewQuestionsChallenge", "100InterviewQuestionsChallenge.njsproj", "{BFEDA513-82E5-49A4-AD74-1756140125B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFEDA513-82E5-49A4-AD74-1756140125B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFEDA513-82E5-49A4-AD74-1756140125B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFEDA513-82E5-49A4-AD74-1756140125B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFEDA513-82E5-49A4-AD74-1756140125B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C58058F-5CA5-4910-A93A-155E4B51055B}
+	EndGlobalSection
+EndGlobal
