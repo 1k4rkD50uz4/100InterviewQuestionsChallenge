@@ -8,6 +8,10 @@
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 //   capitalize('hi there, how is it going?') --> 'Hi There, How Is It Going?'
 
+// --- Solution:
+// Iterate over the characters in the string.If the character is a whitespace, save the index.  Use the index
+// to capitalize the next character and add the other characters in the word if they are not the index char.
+
 function capitalize(str) {
     const inc = i => ++i;
     let delim = ' ', s, j;
