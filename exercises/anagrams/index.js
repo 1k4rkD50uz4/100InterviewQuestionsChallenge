@@ -8,41 +8,80 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {
-    const formatStr = s => s.match(/\w+\b/g);
-    let aa = formatStr(stringA),
-        ab = formatStr(stringB),
-        delims = stringA.match(/\W/g);
-    let as = aa.join(''),
-        bs = ab.join('');
-    if (as.length != bs.length) {
-        return false;
+/*  Iterate over chars in first string.  For each char, count the number of occurrences in the string.  If the char is not in the array, 
+  add it and set it's count to 1.  If it is in the array, find it's index and increment the count.  Repeat the steps for the second string.  
+  Then, compare the count of each char.
+*/
+let res=anagrams('One One', 'Two two two');
+console.log('done');
+
+function anagrams(s1,s2){
+    function main(){
+        let arr=handleChar.call({s:s1}),
+            _arr=handleChar.call({s:s2}),
+            res=arr.length==_arr.length;
+        if(!res){
+            return res;
+        }
+        else{
+            for(let obj of Object.entries(arr)){
+                let i=0;
+                for(let _obj of Object.entries(_arr)){
+                    if(obj.c==_obj.c){
+                        if(obj.n==_obj.n){
+                            break;
+                        }
+                        else{
+                            res=false;
+                            break;
+                        }
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+        return res;
     }
-    for (let wa of aa) {
-        for (let a of wa) {
-            if (delims && delims.indexOf(a) == -1) {
-                let na = numChars.call({ c: a, arr: aa }),
-                    nb = numChars.call({ c: a, arr: ab });
-                if (na == nb) {
+    function handleChar(){
+        let arr=[];
+        for(let c of this.s){
+            let re=/\w/;
+            if(!re.test(c)){
+                continue;
+            }
+            else{
+                let temp=c.toLowerCase();
+                if(c!=temp){
+                    c=temp;
+                }
+                if(arr.length==0){
+                    let o={c:c,n:1};
+                    arr.push(o);
                     continue;
-                } 
-                else  {
-                    return false;
+                }
+                else{
+                    let i=0;
+                    for(let obj of arr){
+                        if(obj.c==c){
+                            obj.n+=1;
+                            break;
+                        }
+                        if(i==arr.length-1){
+                            if(obj.c!=c){
+                                obj={c:c,n:1};
+                                arr.push(obj);
+                                break;
+                            }
+                        }
+                        i++;
+                    }
                 }
             }
         }
+        return arr;
     }
-    return true;
-    function numChars() {
-        let c = this.c, cToLower = c.toLowerCase(), n = 0;
-        for (let word of this.arr) {
-            for (let _c of word) {
-                if (_c == c || _c == cToLower) {
-                    n++;
-                }
-            }
-        }
-        return n;
-    }
+    return main();
 }
 module.exports = anagrams;
