@@ -8,13 +8,9 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-
-let res=anagrams('rail safety', 'fairy tales');
-res=anagrams('One One', 'Two two two');
 function anagrams(s1,s2){
-    let i=0,c,charObj={};
-    while(i<s1.length){
-        c=s1[i++];
+    let charObj={};
+    for(let c of s1){
         if(/\w/.test(c)){
             let temp=c.toLowerCase();
             if(c!=temp){
@@ -28,6 +24,22 @@ function anagrams(s1,s2){
             }
         }
     }
-    return charObj;
+    for(let c of s2){
+        if(/\w/.test(c)){
+            let temp=c.toLowerCase();
+            if(c!=temp){
+                c=temp;
+            }
+            let v=charObj[c],
+            n=s2.match(new RegExp(c,'gi')).length;
+            if(v==n){
+                continue;
+            }
+            else{
+                return false;
+            }
+        }
+    }
+    return true;
 }
 module.exports = anagrams;
