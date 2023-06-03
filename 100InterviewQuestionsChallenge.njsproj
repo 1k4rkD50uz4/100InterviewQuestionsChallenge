@@ -6,7 +6,7 @@
     <ProjectGuid>{bfeda513-82e5-49a4-ad74-1756140125b4}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectView>ShowAllFiles</ProjectView>
-    <StartupFile>exercises\anagrams\index.js</StartupFile>
+    <StartupFile>exercises\capitalize\index.js</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
@@ -21,71 +21,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="package.json" />
-    <Content Include="completed_exercises\package.json" />
     <Content Include="exercises\package.json" />
-    <Content Include="completed_exercises\anagrams\index.js" />
-    <Content Include="completed_exercises\anagrams\test.js" />
-    <Content Include="completed_exercises\bst\index.js" />
-    <Content Include="completed_exercises\bst\test.js" />
-    <Content Include="completed_exercises\capitalize\index.js" />
-    <Content Include="completed_exercises\capitalize\test.js" />
-    <Content Include="completed_exercises\chunk\index.js" />
-    <Content Include="completed_exercises\chunk\test.js" />
-    <Content Include="completed_exercises\circular\index.js" />
-    <Content Include="completed_exercises\circular\linkedlist.js" />
-    <Content Include="completed_exercises\circular\test.js" />
-    <Content Include="completed_exercises\events\example.html" />
-    <Content Include="completed_exercises\events\index.js" />
-    <Content Include="completed_exercises\events\test.js" />
-    <Content Include="completed_exercises\fib\index.js" />
-    <Content Include="completed_exercises\fib\test.js" />
-    <Content Include="completed_exercises\fizzbuzz\index.js" />
-    <Content Include="completed_exercises\fizzbuzz\test.js" />
-    <Content Include="completed_exercises\fromlast\index.js" />
-    <Content Include="completed_exercises\fromlast\linkedlist.js" />
-    <Content Include="completed_exercises\fromlast\test.js" />
-    <Content Include="completed_exercises\levelwidth\index.js" />
-    <Content Include="completed_exercises\levelwidth\node.js" />
-    <Content Include="completed_exercises\levelwidth\test.js" />
-    <Content Include="completed_exercises\linkedlist\directions.html" />
-    <Content Include="completed_exercises\linkedlist\index.js" />
-    <Content Include="completed_exercises\linkedlist\test.js" />
-    <Content Include="completed_exercises\matrix\index.js" />
-    <Content Include="completed_exercises\matrix\test.js" />
-    <Content Include="completed_exercises\maxchar\index.js" />
-    <Content Include="completed_exercises\maxchar\test.js" />
-    <Content Include="completed_exercises\midpoint\index.js" />
-    <Content Include="completed_exercises\midpoint\linkedlist.js" />
-    <Content Include="completed_exercises\midpoint\test.js" />
-    <Content Include="completed_exercises\palindrome\index.js" />
-    <Content Include="completed_exercises\palindrome\test.js" />
-    <Content Include="completed_exercises\pyramid\index.js" />
-    <Content Include="completed_exercises\pyramid\test.js" />
-    <Content Include="completed_exercises\qfroms\index.js" />
-    <Content Include="completed_exercises\qfroms\stack.js" />
-    <Content Include="completed_exercises\qfroms\test.js" />
-    <Content Include="completed_exercises\queue\index.js" />
-    <Content Include="completed_exercises\queue\test.js" />
-    <Content Include="completed_exercises\reverseint\index.js" />
-    <Content Include="completed_exercises\reverseint\test.js" />
-    <Content Include="completed_exercises\reversestring\index.js" />
-    <Content Include="completed_exercises\reversestring\test.js" />
-    <Content Include="completed_exercises\sorting\index.js" />
-    <Content Include="completed_exercises\sorting\test.js" />
-    <Content Include="completed_exercises\stack\index.js" />
-    <Content Include="completed_exercises\stack\test.js" />
-    <Content Include="completed_exercises\steps\index.js" />
-    <Content Include="completed_exercises\steps\test.js" />
-    <Content Include="completed_exercises\tree\index.js" />
-    <Content Include="completed_exercises\tree\test.js" />
-    <Content Include="completed_exercises\validate\index.js" />
-    <Content Include="completed_exercises\validate\node.js" />
-    <Content Include="completed_exercises\validate\test.js" />
-    <Content Include="completed_exercises\vowels\index.js" />
-    <Content Include="completed_exercises\vowels\test.js" />
-    <Content Include="completed_exercises\weave\index.js" />
-    <Content Include="completed_exercises\weave\queue.js" />
-    <Content Include="completed_exercises\weave\test.js" />
     <Content Include="diagrams\01\diagrams.xml" />
     <Content Include="diagrams\02\diagrams.xml" />
     <Content Include="diagrams\03\diagrams.xml" />
@@ -161,34 +97,6 @@
     <Content Include="exercises\weave\test.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="completed_exercises" />
-    <Folder Include="completed_exercises\anagrams" />
-    <Folder Include="completed_exercises\bst" />
-    <Folder Include="completed_exercises\capitalize" />
-    <Folder Include="completed_exercises\chunk" />
-    <Folder Include="completed_exercises\circular" />
-    <Folder Include="completed_exercises\events" />
-    <Folder Include="completed_exercises\fib" />
-    <Folder Include="completed_exercises\fizzbuzz" />
-    <Folder Include="completed_exercises\fromlast" />
-    <Folder Include="completed_exercises\levelwidth" />
-    <Folder Include="completed_exercises\linkedlist" />
-    <Folder Include="completed_exercises\matrix" />
-    <Folder Include="completed_exercises\maxchar" />
-    <Folder Include="completed_exercises\midpoint" />
-    <Folder Include="completed_exercises\palindrome" />
-    <Folder Include="completed_exercises\pyramid" />
-    <Folder Include="completed_exercises\qfroms" />
-    <Folder Include="completed_exercises\queue" />
-    <Folder Include="completed_exercises\reverseint" />
-    <Folder Include="completed_exercises\reversestring" />
-    <Folder Include="completed_exercises\sorting" />
-    <Folder Include="completed_exercises\stack" />
-    <Folder Include="completed_exercises\steps" />
-    <Folder Include="completed_exercises\tree" />
-    <Folder Include="completed_exercises\validate" />
-    <Folder Include="completed_exercises\vowels" />
-    <Folder Include="completed_exercises\weave" />
     <Folder Include="diagrams" />
     <Folder Include="diagrams\01" />
     <Folder Include="diagrams\02" />
